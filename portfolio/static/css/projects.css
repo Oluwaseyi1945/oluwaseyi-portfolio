@@ -1,0 +1,959 @@
+
+/* =========================================
+   PROJECTS PAGE
+========================================= */
+
+.all-projects-page {
+    width: 100%;
+    padding: 70px 0 100px;
+}
+
+
+/* =========================================
+   SECTION HEADER
+========================================= */
+
+.section-header {
+    max-width: 760px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.section-header .eyebrow {
+    margin-bottom: 12px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #6c63ff;
+}
+
+.section-header h1 {
+    margin: 0 0 18px;
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    line-height: 1;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    color: #f2f2f6;
+}
+
+.section-description {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #9396a5;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   PROJECT GRID
+========================================= */
+
+.all-projects-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+
+/* =========================================
+   PROJECT CARD
+========================================= */
+
+.all-project-card {
+    width: 100%;
+    background: #14151d;
+    border: 1px solid #24262f;
+    border-radius: 20px;
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.all-project-card:hover {
+    transform: translateY(-6px);
+    border-color: #34364a;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =========================================
+   BROWSER BAR
+========================================= */
+
+.all-project-browser {
+    height: 52px;
+    padding: 0 18px;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    background: #1b1d28;
+    border-bottom: 1px solid #24262f;
+}
+
+
+/* Browser dots */
+
+.browser-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.browser-dot.red {
+    background: #ff5f57;
+}
+
+.browser-dot.yellow {
+    background: #febc2e;
+}
+
+.browser-dot.green {
+    background: #28c840;
+}
+
+
+/* Fake URL */
+
+.browser-url {
+    margin-left: 12px;
+    padding: 6px 14px;
+
+    flex: 1;
+
+    max-width: 400px;
+
+    background: #14151d;
+    border: 1px solid #24262f;
+    border-radius: 7px;
+
+    color: #777b8c;
+
+    font-size: 0.78rem;
+    font-family: monospace;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/* Project number */
+
+.project-number {
+    margin-left: auto;
+
+    color: #6f7281;
+
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+
+
+/* =========================================
+   PROJECT IMAGE
+========================================= */
+
+.all-project-card > img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    min-height: 300px;
+    max-height: 600px;
+
+    object-fit: cover;
+    object-position: top center;
+
+    background: #0a0b10;
+
+    border-bottom: 1px solid #24262f;
+
+    transition: transform 0.5s ease;
+}
+
+.all-project-card:hover > img {
+    transform: scale(1.015);
+}
+
+
+/* =========================================
+   PROJECT CONTENT
+========================================= */
+
+.all-project-content {
+    padding: 32px 35px 35px;
+}
+
+.all-project-content h2 {
+    margin: 0 0 12px;
+
+    color: #f2f2f6;
+
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 750;
+    line-height: 1.2;
+    letter-spacing: -0.025em;
+}
+
+.all-project-content p {
+    max-width: 800px;
+    margin: 0 0 22px;
+
+    color: #9396a5;
+
+    font-size: 0.98rem;
+    line-height: 1.75;
+}
+
+
+/* =========================================
+   TECHNOLOGY TAGS
+========================================= */
+
+.all-project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+
+    margin-bottom: 28px;
+}
+
+.all-project-tech span {
+    display: inline-flex;
+    align-items: center;
+
+    padding: 7px 12px;
+
+    background: #1b1d28;
+    border: 1px solid #2a2c37;
+    border-radius: 7px;
+
+    color: #b9bbc7;
+
+    font-size: 0.75rem;
+    font-weight: 600;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.all-project-tech span:hover {
+    background: #222431;
+    border-color: #6c63ff;
+    color: #f2f2f6;
+}
+
+
+/* =========================================
+   PROJECT LINKS
+========================================= */
+
+.all-project-links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.all-project-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 42px;
+    padding: 10px 18px;
+
+    border: 1px solid #2a2c37;
+    border-radius: 8px;
+
+    color: #dcdde5;
+
+    font-size: 0.85rem;
+    font-weight: 650;
+
+    text-decoration: none;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.all-project-links a:first-child {
+    background: #6c63ff;
+    border-color: #6c63ff;
+    color: #ffffff;
+}
+
+.all-project-links a:first-child:hover {
+    background: #7a72ff;
+    border-color: #7a72ff;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.all-project-links a:not(:first-child) {
+    background: transparent;
+}
+
+.all-project-links a:not(:first-child):hover {
+    background: #1b1d28;
+    border-color: #44475a;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   RESPONSIVE — TABLET
+========================================= */
+
+@media (max-width: 768px) {
+
+    .all-projects-page {
+        padding: 55px 0 80px;
+    }
+
+    .section-header {
+        margin-bottom: 40px;
+    }
+
+    .section-header h1 {
+        font-size: 3rem;
+    }
+
+    .section-description {
+        padding: 0 15px;
+        font-size: 0.95rem;
+    }
+
+    .all-project-card {
+        border-radius: 16px;
+    }
+
+    .all-project-browser {
+        height: 48px;
+        padding: 0 14px;
+    }
+
+    .browser-url {
+        max-width: 260px;
+        margin-left: 8px;
+    }
+
+    .all-project-card > img {
+        min-height: 220px;
+    }
+
+    .all-project-content {
+        padding: 26px 24px 28px;
+    }
+}
+
+
+/* =========================================
+   RESPONSIVE — MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .all-projects-page {
+        padding: 40px 0 60px;
+    }
+
+    .section-header {
+        margin-bottom: 32px;
+    }
+
+    .section-header h1 {
+        font-size: 2.4rem;
+    }
+
+    .section-description {
+        font-size: 0.9rem;
+        line-height: 1.7;
+    }
+
+    .all-project-browser {
+        height: 44px;
+        padding: 0 12px;
+        gap: 6px;
+    }
+
+    .browser-dot {
+        width: 8px;
+        height: 8px;
+    }
+
+    .browser-url {
+        margin-left: 6px;
+        padding: 5px 9px;
+        font-size: 0.68rem;
+    }
+
+    .project-number {
+        font-size: 0.68rem;
+    }
+
+    .all-project-card > img {
+        min-height: 180px;
+    }
+
+    .all-project-content {
+        padding: 22px 18px 24px;
+    }
+
+    .all-project-content h2 {
+        font-size: 1.4rem;
+    }
+
+    .all-project-content p {
+        font-size: 0.9rem;
+        line-height: 1.7;
+    }
+
+    .all-project-tech {
+        gap: 7px;
+        margin-bottom: 22px;
+    }
+
+    .all-project-tech span {
+        padding: 6px 9px;
+        font-size: 0.68rem;
+    }
+
+    .all-project-links {
+        width: 100%;
+        gap: 8px;
+    }
+
+    .all-project-links a {
+        flex: 1;
+        min-height: 40px;
+        padding: 9px 12px;
+        font-size: 0.78rem;
+    }
+}
+
+
+/* =========================================
+   ACCESSIBILITY
+========================================= */
+
+.all-project-links a:focus-visible {
+    outline: 2px solid #6c63ff;
+    outline-offset: 3px;
+}
+
+.all-project-tech span:focus-visible {
+    outline: 2px solid #6c63ff;
+    outline-offset: 2px;
+}
+
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .all-project-card,
+    .all-project-card > img,
+    .all-project-links a,
+    .all-project-tech span {
+        transition: none;
+    }
+
+    .all-project-card:hover {
+        transform: none;
+    }
+
+    .all-project-card:hover > img {
+        transform: none;
+    }
+
+    .all-project-links a:hover {
+        transform: none;
+    }
+}
+
+/* =========================================
+   PAGE LOAD ANIMATIONS
+========================================= */
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(35px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.96);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/* =========================================
+   SECTION HEADER ANIMATION
+========================================= */
+
+.section-header {
+    animation: fadeDown 0.8s ease both;
+}
+
+.section-header .eyebrow {
+    animation: fadeUp 0.7s ease 0.1s both;
+}
+
+.section-header h1 {
+    animation: fadeUp 0.8s ease 0.2s both;
+}
+
+.section-description {
+    animation: fadeUp 0.8s ease 0.35s both;
+}
+
+
+/* =========================================
+   PROJECT CARD ANIMATION
+========================================= */
+
+.all-project-card {
+    opacity: 0;
+    animation: fadeUp 0.8s ease forwards;
+
+    transition:
+        transform 0.35s ease,
+        border-color 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+/* Stagger each project */
+
+.all-project-card:nth-child(1) {
+    animation-delay: 0.25s;
+}
+
+.all-project-card:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.all-project-card:nth-child(3) {
+    animation-delay: 0.55s;
+}
+
+.all-project-card:nth-child(4) {
+    animation-delay: 0.7s;
+}
+
+.all-project-card:nth-child(5) {
+    animation-delay: 0.85s;
+}
+
+.all-project-card:nth-child(6) {
+    animation-delay: 1s;
+}
+
+
+/* =========================================
+   PROJECT CARD HOVER
+========================================= */
+
+.all-project-card:hover {
+    transform: translateY(-8px);
+
+    border-color: #34364a;
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.3);
+}
+
+
+/* =========================================
+   BROWSER BAR
+========================================= */
+
+.all-project-browser {
+    transition: background 0.3s ease;
+}
+
+.all-project-card:hover .all-project-browser {
+    background: #1e202b;
+}
+
+
+/* =========================================
+   BROWSER DOT ANIMATION
+========================================= */
+
+.browser-dot {
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.all-project-card:hover .browser-dot {
+    transform: scale(1.15);
+}
+
+.all-project-card:hover .browser-dot.red {
+    box-shadow: 0 0 8px rgba(255, 95, 87, 0.5);
+}
+
+.all-project-card:hover .browser-dot.yellow {
+    box-shadow: 0 0 8px rgba(254, 188, 46, 0.5);
+}
+
+.all-project-card:hover .browser-dot.green {
+    box-shadow: 0 0 8px rgba(40, 200, 80, 0.5);
+}
+
+
+/* =========================================
+   IMAGE ANIMATION
+========================================= */
+
+.all-project-card > img {
+    transition:
+        transform 0.7s cubic-bezier(0.2, 0.7, 0.2, 1),
+        filter 0.5s ease;
+}
+
+.all-project-card:hover > img {
+    transform: scale(1.025);
+    filter: brightness(1.04);
+}
+
+
+/* =========================================
+   PROJECT CONTENT ANIMATION
+========================================= */
+
+.all-project-content h2 {
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.all-project-card:hover .all-project-content h2 {
+    color: #ffffff;
+    transform: translateX(3px);
+}
+
+
+/* =========================================
+   TECHNOLOGY TAGS
+========================================= */
+
+.all-project-tech span {
+    transition:
+        background 0.25s ease,
+        border-color 0.25s ease,
+        color 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.all-project-tech span:hover {
+    background: #222431;
+    border-color: #6c63ff;
+    color: #f2f2f6;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 5px 15px rgba(108, 99, 255, 0.15);
+}
+
+
+/* =========================================
+   TECHNOLOGY TAG STAGGER
+========================================= */
+
+.all-project-tech span:nth-child(1) {
+    transition-delay: 0s;
+}
+
+.all-project-tech span:nth-child(2) {
+    transition-delay: 0.02s;
+}
+
+.all-project-tech span:nth-child(3) {
+    transition-delay: 0.04s;
+}
+
+.all-project-tech span:nth-child(4) {
+    transition-delay: 0.06s;
+}
+
+.all-project-tech span:nth-child(5) {
+    transition-delay: 0.08s;
+}
+
+
+/* =========================================
+   PROJECT BUTTONS
+========================================= */
+
+.all-project-links a {
+    position: relative;
+    overflow: hidden;
+
+    transition:
+        background 0.25s ease,
+        border-color 0.25s ease,
+        color 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+/* Button shine */
+
+.all-project-links a::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -120%;
+
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.12),
+        transparent
+    );
+
+    transition: left 0.5s ease;
+}
+
+.all-project-links a:hover::before {
+    left: 120%;
+}
+
+
+/* Primary button */
+
+.all-project-links a:first-child:hover {
+    background: #7a72ff;
+    border-color: #7a72ff;
+    color: #ffffff;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 25px rgba(108, 99, 255, 0.3);
+}
+
+
+/* Secondary buttons */
+
+.all-project-links a:not(:first-child):hover {
+    background: #1b1d28;
+    border-color: #44475a;
+    color: #ffffff;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================
+   BUTTON PRESS EFFECT
+========================================= */
+
+.all-project-links a:active {
+    transform: translateY(0) scale(0.97);
+}
+
+
+/* =========================================
+   PROJECT NUMBER
+========================================= */
+
+.project-number {
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.all-project-card:hover .project-number {
+    color: #6c63ff;
+    transform: translateX(-3px);
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.all-project-content p {
+    transition: color 0.3s ease;
+}
+
+.all-project-card:hover .all-project-content p {
+    color: #a5a7b5;
+}
+
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .section-header,
+    .section-header .eyebrow,
+    .section-header h1,
+    .section-description,
+    .all-project-card {
+        animation: none;
+        opacity: 1;
+    }
+
+    .all-project-card,
+    .all-project-card > img,
+    .all-project-links a,
+    .all-project-tech span,
+    .browser-dot,
+    .project-number,
+    .all-project-content h2 {
+        transition: none;
+    }
+
+    .all-project-card:hover,
+    .all-project-card:hover > img,
+    .all-project-links a:hover,
+    .all-project-tech span:hover {
+        transform: none;
+    }
+
+    .all-project-links a::before {
+        display: none;
+    }
+}
+
+
+/* =========================================
+   BACK BUTTON
+========================================= */
+
+.all-projects-grid > button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 15px auto 0;
+    padding: 12px 24px;
+
+    background: transparent;
+    border: 1px solid #2a2c37;
+    border-radius: 8px;
+
+    color: #dcdde5;
+    font-size: 0.85rem;
+    font-weight: 650;
+
+    cursor: pointer;
+
+    transition:
+        background 0.25s ease,
+        border-color 0.25s ease,
+        color 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.all-projects-grid > button:hover {
+    background: #6c63ff;
+    border-color: #6c63ff;
+    color: #ffffff;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 25px rgba(108, 99, 255, 0.3);
+}
+
+.all-projects-grid > button:active {
+    transform: translateY(0) scale(0.97);
+}
+
+.all-projects-grid > button:focus-visible {
+    outline: 2px solid #6c63ff;
+    outline-offset: 3px;
+}
+
+
+/* =========================================
+   BACK BUTTON ARROW
+========================================= */
+
+.all-projects-grid > button::before {
+    content: "←";
+    margin-right: 8px;
+    font-size: 1rem;
+
+    transition: transform 0.25s ease;
+}
+
+.all-projects-grid > button:hover::before {
+    transform: translateX(-4px);
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .all-projects-grid > button {
+        width: 100%;
+        min-height: 42px;
+        margin-top: 8px;
+        padding: 10px 18px;
+    }
+
+}

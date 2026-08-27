@@ -1,0 +1,338 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+Projects — Oluwaseyi Oladejo
+{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/projects.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+
+    <section class="all-projects-page">
+
+        <!-- PROJECT HEADER -->
+        <header class="section-header">
+
+            <p class="eyebrow">MY WORK</p>
+
+            <h1>Projects</h1>
+
+            <p class="section-description">
+                A selection of projects I've built using Django, Python,
+                Power BI, and other technologies.
+            </p>
+
+        </header>
+
+
+        <!-- PROJECT GRID -->
+        <div class="all-projects-grid">
+
+
+            <!-- PROJECT 01 — E-STORE -->
+            <article class="all-project-card">
+
+                <div class="all-project-browser">
+
+                    <span class="browser-dot red"></span>
+                    <span class="browser-dot yellow"></span>
+                    <span class="browser-dot green"></span>
+
+                    <span class="browser-url">
+                       https://estore-e9p2.onrender.com
+                    </span>
+
+                    <span class="project-number">
+                        01
+                    </span>
+
+                </div>
+
+
+                <img
+                    src="{% static 'images/cc.png' %}"
+                    alt="E-store e-commerce project screenshot"
+                    loading="lazy"
+                >
+
+
+                <div class="all-project-content">
+
+                    <h2>E-store</h2>
+
+                    <p>
+                        A full-featured e-commerce platform with cart,
+                        checkout, user authentication, product management,
+                        and order management.
+                    </p>
+
+
+                    <div class="all-project-tech">
+
+                        <span>Django</span>
+                        <span>Python</span>
+                        <span>PostgreSQL</span>
+                        <span>JavaScript</span>
+
+                    </div>
+
+
+                    <div class="all-project-links">
+
+                        <a
+                            href="https://estore-e9p2.onrender.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Live Demo ↗
+                        </a>
+
+                        <a
+                            href="https://github.com/Oluwaseyi1945/estore"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            GitHub
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PROJECT 02 — MYBLOG -->
+            <article class="all-project-card">
+
+                <div class="all-project-browser">
+
+                    <span class="browser-dot red"></span>
+                    <span class="browser-dot yellow"></span>
+                    <span class="browser-dot green"></span>
+
+                    <span class="browser-url">
+                        myblog.app
+                    </span>
+
+                    <span class="project-number">
+                        02
+                    </span>
+
+                </div>
+
+
+                <img
+                    src="{% static 'images/abc.png' %}"
+                    alt="MyBlog project screenshot"
+                    loading="lazy"
+                >
+
+
+                <div class="all-project-content">
+
+                    <h2>MyBlog</h2>
+
+                    <p>
+                        A Django-powered blog application with categories,
+                        comments, search functionality, pagination,
+                        and content management.
+                    </p>
+
+
+                    <div class="all-project-tech">
+
+                        <span>Django</span>
+                        <span>Python</span>
+                        <span>Bootstrap</span>
+                        <span>SQLite</span>
+
+                    </div>
+
+
+                    <div class="all-project-links">
+
+                        <a
+                            href="#"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Live Demo ↗
+                        </a>
+
+                        <a
+                            href="#"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            GitHub
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PROJECT 03 — DASHBOARD -->
+            <article class="all-project-card">
+
+                <div class="all-project-browser">
+
+                    <span class="browser-dot red"></span>
+                    <span class="browser-dot yellow"></span>
+                    <span class="browser-dot green"></span>
+
+                    <span class="browser-url">
+                        analytics.app
+                    </span>
+
+                    <span class="project-number">
+                        03
+                    </span>
+
+                </div>
+
+
+                <img
+                    src="{% static 'images/pb.png' %}"
+                    alt="Power BI Dashboard Analytics project screenshot"
+                    loading="lazy"
+                >
+
+
+                <div class="all-project-content">
+
+                    <h2>Dashboard Analytics</h2>
+
+                    <p>
+                        A business intelligence dashboard created with
+                        Power BI to visualize KPIs, trends, performance,
+                        and actionable business insights.
+                    </p>
+
+
+                    <div class="all-project-tech">
+
+                        <span>Power BI</span>
+                        <span>Excel</span>
+                        <span>DAX</span>
+                        <span>Data Analysis</span>
+
+                    </div>
+
+
+                    <div class="all-project-links">
+
+                        <a
+                            href="#"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            View Project ↗
+                        </a>
+
+                        <a
+                            href="#"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            GitHub
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+            
+            <!-- PROJECT 03 — DASHBOARD -->
+            <article class="all-project-card">
+
+                <div class="all-project-browser">
+
+                    <span class="browser-dot red"></span>
+                    <span class="browser-dot yellow"></span>
+                    <span class="browser-dot green"></span>
+
+                    <span class="browser-url">
+                       API
+                    </span>
+
+                    <span class="project-number">
+                        04
+                    </span>
+
+                </div>
+
+
+                <img
+                    src="https://placehold.co/400x220/16161f/6c63ff?text=API"
+                    alt="Power BI Dashboard Analytics project screenshot"
+                    loading="lazy"
+                >
+
+
+                <div class="all-project-content">
+
+                    <h2>Restaurant API</h2>
+
+                    <p>
+                        A RESTful API for restaurant ordering system with authentication and order management.
+                    </p>
+
+
+                    <div class="all-project-tech">
+
+                        <span>Django REST</span>
+                        <span>Python</span>
+                        <span>JWT</span>
+
+                    </div>
+
+
+                    <div class="all-project-links">
+
+                        <a
+                            href="#"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            View Project ↗
+                        </a>
+
+                        <a
+                            href="#"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            GitHub
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+<a href="{% url 'home' %}" class="back-home-btn">
+    ← Back Home
+</a>
+
+
+        </div>
+
+    </section>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,98 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% block title %}Oluwaseyi Oladejo — Python/Django Developer{% endblock %}</title>
+
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    {% block extra_css %}
+    {% endblock %}
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="nav-inner">
+
+        <div class="logo">
+            <span class="logo-mark">SO.</span>
+            <span class="logo-name">Oluwaseyi Oladejo</span>
+        </div>
+
+        <nav class="nav-links">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <a href="#contact" class="btn btn-primary btn-small">
+            Let's Talk
+        </a>
+
+    </div>
+</header>
+
+<main>
+
+    {% block content %}
+    {% endblock %}
+
+</main>
+
+<div class="container">
+    <!-- LET'S CONNECT -->
+  <section class="card" id="contact">
+    <div class="card-header">
+      <span class="card-icon"><i class="fa-regular fa-paper-plane"></i></span>
+      <h3>Let's Connect</h3>
+    </div>
+    <p class="connect-desc">I'm open to new opportunities and collaborations. Let's build something amazing together!</p>
+    <div class="connect-grid">
+      <div class="connect-box">
+        <span class="connect-icon"><i class="fa-regular fa-envelope"></i></span>
+        <div>
+          <span class="connect-label">Email</span>
+          <span class="connect-value">oluwaseyioladejo53@gmail.com</span>
+        </div>
+      </div>
+      <div class="connect-box">
+        <span class="connect-icon"><i class="fa-brands fa-github"></i></span>
+        <div>
+          <span class="connect-label">GitHub</span>
+          <span class="connect-value">github.com/Oluwaseyi1945</span>
+        </div>
+      </div>
+      <div class="connect-box">
+        <span class="connect-icon"><i class="fa-brands fa-linkedin-in"></i></span>
+        <div>
+          <span class="connect-label">Linkedin</span>
+          <span class="connect-value">linkedin.com/in/oluwaseyi-oladejo</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+  
+<footer class="footer">
+    <div class="footer-inner">
+        <p>© 2026 Oluwaseyi Oladejo. All rights reserved.</p>
+        <p>
+            Built with
+            <i class="fa-solid fa-heart" style="color:#ff4d6d"></i>
+            and Django
+        </p>
+    </div>
+</footer>
+
+</body>
+</html>

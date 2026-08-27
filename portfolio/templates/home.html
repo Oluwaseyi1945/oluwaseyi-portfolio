@@ -1,0 +1,225 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}
+Oluwaseyi Oladejo — Python/Django Developer
+{% endblock %}
+
+{% block content %}
+
+<main class="container">
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <p class="eyebrow">HELLO, I'M</p>
+      <h1 class="hero-name">Oluwaseyi Oladejo</h1>
+      <h2 class="hero-title">Python/Django Developer<br>&amp; Web Developer</h2>
+      <p class="hero-desc">I build responsive websites, web applications and e-commerce solutions that solve real problems.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View My Work <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#contact" class="btn btn-outline">Contact Me <i class="fa-regular fa-envelope"></i></a>
+      </div>
+      <div class="social-row">
+        <a href="#" class="social-icon"><i class="fa-brands fa-github"></i></a>
+        <a href="#" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fa-regular fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="hero-glow"></div>
+      <img src="{% static 'images/bb.png' %}" alt="Oluwaseyi Oladejo">
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="card" id="about">
+    <div class="card-header">
+      <span class="card-icon"><i class="fa-regular fa-user"></i></span>
+      <h3>About Me</h3>
+    </div>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>I'm a passionate Python/Django developer who enjoys building clean, efficient and user-friendly web applications. I focus on writing clean code, solving problems and continuously improving my skills.</p>
+        <p><span class="link-purple">Currently learning</span>: React, Docker, and advanced backend development.</p>
+      </div>
+      <div class="about-stats">
+        <div class="stat">
+          <span class="stat-icon"><i class="fa-solid fa-code"></i></span>
+          <span class="stat-label">Projects</span>
+          <span class="stat-value">5+</span>
+          <span class="stat-sub">Completed</span>
+        </div>
+        <div class="stat">
+          <span class="stat-icon"><i class="fa-solid fa-rocket"></i></span>
+          <span class="stat-label">Technologies</span>
+          <span class="stat-value">9+</span>
+          <span class="stat-sub">Working With</span>
+        </div>
+        <div class="stat">
+          <span class="stat-icon"><i class="fa-solid fa-graduation-cap"></i></span>
+          <span class="stat-label">Focus</span>
+          <span class="stat-value">100%</span>
+          <span class="stat-sub">On Improving</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="card" id="skills">
+    <div class="card-header">
+      <span class="card-icon"><i class="fa-solid fa-chart-simple"></i></span>
+      <h3>Skills</h3>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-chip"><span class="skill-icon" style="color:#3776AB"><i class="fa-brands fa-python"></i></span>Python</div>
+      <div class="skill-chip"><span class="skill-icon" style="color:#092E20"><i class="fa-brands fa-python"></i></span>Django</div>
+      <div class="skill-chip"><span class="skill-icon" style="color:#E34F26"><i class="fa-brands fa-html5"></i></span>HTML</div>
+      <div class="skill-chip"><span class="skill-icon" style="color:#1572B6"><i class="fa-brands fa-css3-alt"></i></span>CSS</div>
+      <div class="skill-chip"><span class="skill-icon" style="color:#F7DF1E"><i class="fa-brands fa-js"></i></span>JavaScript</div>
+      <div class="skill-chip"><span class="skill-icon" style="color:#7952B3"><i class="fa-brands fa-bootstrap"></i></span>Bootstrap</div>
+      <div class="skill-chip"><span class="skill-icon"><i class="fa-brands fa-git-alt"></i></span>Git &amp; GitHub</div>
+      <div class="skill-chip"><span class="skill-icon" style="color:#4169E1"><i class="fa-solid fa-elephant"></i></span>PostgreSQL</div>
+      <div class="skill-chip"><span class="skill-icon" style="color:#FF6B00"><i class="fa-solid fa-plug"></i></span>REST APIs</div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="card" id="projects">
+    <div class="card-header card-header-split">
+      <div class="card-header">
+        <span class="card-icon"><i class="fa-regular fa-folder-open"></i></span>
+        <h3>Projects</h3>
+      </div>
+      <a href="{% url 'projects' %}" class="link-purple">View All Projects <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <img class="project-thumb"  src="{% static 'images/cc.png' %}" alt="E-store project screenshot">
+        <div class="project-body">
+          <h4><i class="fa-solid fa-cart-shopping"></i> E-store (Django)</h4>
+          <p>A full-featured e-commerce platform with cart, checkout, user auth, and order management.</p>
+          <div class="tags">
+            <span class="tag">Django</span><span class="tag">Python</span><span class="tag">PostgreSQL</span><span class="tag">JS</span>
+          </div>
+          <div class="project-links">
+            <a href="https://estore-e9p2.onrender.com" class="link-purple">Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a href="https://github.com/Oluwaseyi1945/estore" class="link-white">GitHub <i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+
+    <img
+        class="project-thumb"
+        src="{% static 'images/abc.png' %}"
+        alt="MyBlog project screenshot"
+    >
+
+    <div class="project-body">
+
+        <h4>
+            <i class="fa-regular fa-file-lines"></i>
+            MyBlog
+        </h4>
+
+        <p>
+            A Django blog application with categories, comments,
+            search, and pagination.
+        </p>
+
+        <div class="tags">
+            <span class="tag">Django</span>
+            <span class="tag">Python</span>
+            <span class="tag">Bootstrap</span>
+        </div>
+
+        <div class="project-links">
+
+    <a href="https://django-blog-9ph0.onrender.com"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="link-purple">
+        Live Demo
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+    </a>
+
+    <a href="https://github.com/Oluwaseyi1945/Django_blog"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="link-white">
+        GitHub
+        <i class="fa-brands fa-github"></i>
+    </a>
+
+</div>
+
+    </div>
+
+</div>
+
+ <div class="project-card">
+        <img class="project-thumb dark-thumb" src="https://placehold.co/400x220/16161f/6c63ff?text=API" alt="Restaurant API project screenshot">
+        <div class="project-body">
+          <h4><i class="fa-solid fa-utensils"></i> Restaurant API</h4>
+          <p>A RESTful API for restaurant ordering system with authentication and order management.</p>
+          <div class="tags">
+            <span class="tag">Django REST</span><span class="tag">Python</span><span class="tag">JWT</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="link-purple">Docs <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a href="#" class="link-white">GitHub <i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="project-card">
+        <img class="project-thumb" src="{% static 'images/pb.png' %}" alt="Dashboard Analytics project screenshot">
+        <div class="project-body">
+          <h4><i class="fa-solid fa-chart-line"></i> Dashboard Analytics</h4>
+          <p>A data analytics dashboard built with Power BI to visualize key business insights.</p>
+          <div class="tags">
+            <span class="tag">Power BI</span><span class="tag">Excel</span><span class="tag">DAX</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="link-purple">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a href="#" class="link-white">GitHub <i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+
+     
+
+    </div>
+  </section>
+
+  <!-- EXPERIENCE / LEARNING -->
+  <section class="card">
+    <div class="card-header">
+      <span class="card-icon"><i class="fa-solid fa-briefcase"></i></span>
+      <h3>Experience / Learning</h3>
+    </div>
+    <div class="experience-grid">
+      <div class="experience-left">
+        <span class="timeline-dot"></span>
+        <h4>Aspiring Full-Stack Developer</h4>
+        <p class="link-purple current-focus">Current Focus</p>
+        <p class="exp-desc">Building practical web applications with Python, Django and modern web technologies. Continuously learning and working on real-world projects.</p>
+      </div>
+      <ul class="experience-right">
+        <li><span class="bullet-dot"></span>Completed multiple projects using Django &amp; Python</li>
+        <li><span class="bullet-dot"></span>Building REST APIs and working with databases</li>
+        <li><span class="bullet-dot"></span>Improving frontend skills with JavaScript &amp; modern UI libraries</li>
+        <li><span class="bullet-dot"></span>Exploring DevOps tools like Docker and deployment</li>
+      </ul>
+    </div>
+  </section>
+
+{% endblock %}
